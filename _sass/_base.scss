@@ -13,6 +13,7 @@
     body {
         font-family: $font-family-base;
         background-color: $background-color;
+        color: $text-color;
     }
     @media (min-width: 1200px){
         .container {
@@ -63,14 +64,6 @@
         color: $link-color;
         text-decoration: none;
         font-size: $link-size;
-
-        &:visited {
-            
-        }
-
-        &:hover {
-            
-        }
     }
 
 
@@ -99,6 +92,26 @@
             }
         }
     }
+    .liner-down-gradient {
+        background: rgba(248,248,248,1);
+background: -moz-linear-gradient(top, rgba(248,248,248,1) 0%, rgba(248,248,248,1) 0%, rgba(255,255,255,1) 94%, rgba(255,255,255,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,248,248,1)), color-stop(0%, rgba(248,248,248,1)), color-stop(94%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+background: -webkit-linear-gradient(top, rgba(248,248,248,1) 0%, rgba(248,248,248,1) 0%, rgba(255,255,255,1) 94%, rgba(255,255,255,1) 100%);
+background: -o-linear-gradient(top, rgba(248,248,248,1) 0%, rgba(248,248,248,1) 0%, rgba(255,255,255,1) 94%, rgba(255,255,255,1) 100%);
+background: -ms-linear-gradient(top, rgba(248,248,248,1) 0%, rgba(248,248,248,1) 0%, rgba(255,255,255,1) 94%, rgba(255,255,255,1) 100%);
+background: linear-gradient(to bottom, rgba(248,248,248,1) 0%, rgba(248,248,248,1) 0%, rgba(255,255,255,1) 94%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#ffffff', GradientType=0 );
+    }
+    .liner-gradient {
+        background: rgba(248,248,248,1);
+        background: -moz-linear-gradient(top, rgba(248,248,248,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 17%, rgba(248,248,248,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,248,248,1)), color-stop(0%, rgba(255,255,255,1)), color-stop(17%, rgba(255,255,255,1)), color-stop(100%, rgba(248,248,248,1)));
+        background: -webkit-linear-gradient(top, rgba(248,248,248,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 17%, rgba(248,248,248,1) 100%);
+        background: -o-linear-gradient(top, rgba(248,248,248,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 17%, rgba(248,248,248,1) 100%);
+        background: -ms-linear-gradient(top, rgba(248,248,248,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 17%, rgba(248,248,248,1) 100%);
+        background: linear-gradient(to bottom, rgba(248,248,248,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 17%, rgba(248,248,248,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#f8f8f8', GradientType=0 );
+    }
     .gradient {
         background: rgba(248,248,248,1);
         background: -moz-linear-gradient(left, rgba(248,248,248,1) 0%, rgba(255,255,255,1) 19%, rgba(255,255,255,1) 79%, rgba(248,248,248,1) 100%);
@@ -112,12 +125,57 @@
     .blue {
         color: $blue-color;
     }
+    .dark-blue {
+        color: $dark-blue-color;
+    }
     .purple {
         color: $purple-color;
     }
     .orange {
         color: $orange-color;
     }
+    .header-box {
+        padding: 15px;
+        background-color: $background-color;
+        position: relative;
+        margin-top: -80px;
+        @media #{$xs} {
+            position: inherit;
+            margin: 20px 0;
+            bottom: 0;
+        }
+        h1 {
+            font-size: $font-size-h1-large;
+            font-weight: $font-weight-light;
+            margin-bottom: 15px;
+            @media #{$xs} {
+                font-size: $font-size-h2;
+            }
+        }
+        p {
+            margin-bottom: 5px;
+            font-weight: $font-weight-bold;
+        }
+    }
+    .icon-box {
+        margin: 15px 0;
+        & > div {
+            padding: 0 7px;
+            &:first-child {
+                text-align: right;
+            }
+        }
+        h1 {
+            font-weight: $font-weight-light;
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+        p {
+            font-weight: $font-weight-regular;
+        }
+    }
+
+
 /*** Button styles **/
     .btn-header {
         border: 1px solid $white-transparent-middle;

@@ -3,10 +3,9 @@ $font-family-base:  "acumin-pro", sans-serif;
 
 $font-size-base: 14px;
 $font-size-base-large: floor(($font-size-base * 1.5));
-$font-size-base-small: floor(($font-size-base / 1.4));
-$font-size-h1-large: floor(($font-size-base * 5));
+$font-size-base-small: floor(($font-size-base / 1.1));
+$font-size-h1-large: floor(($font-size-base * 2));
 $font-size-h1: floor(($font-size-base * 1.8));
-$font-size-h1-mobile: floor(($font-size-base * 2.5));
 $font-size-h2: floor(($font-size-base * 1.5));
 $font-size-h3: floor(($font-size-base * 1.7));
 $font-size-h4: floor(($font-size-base / 0.87));
@@ -27,7 +26,7 @@ $link-color: #ffffff;
 $background-color: #f8f8f8;
 $border-color: #d1d2d4;
 
-$white-transparent-dark: rgba(255, 255, 255, 0.93);
+$white-transparent-dark: rgba(255, 255, 255, 0.92);
 $white-transparent-middle: rgba(255, 255, 255, 0.63);
 
 $white-color: #fff;
