@@ -1,0 +1,147 @@
+- name: EnCORE®
+  questions:
+  - name: What is WasteMate?
+    answer: > 
+     It’s an EnCORE abstraction that runs in the cloud. 
+     The application syncs all of the important information with 
+     EnCORE and allows new customers to sign up effortlessly.
+
+  - name: What is its objective?
+    answer: > 
+     To allow customers to easily sign up for all kinds of waste services online 24/7, 
+     all while creating efficiency and increasing revenue for the hauler 
+     providing the services.
+
+  - name: How will WasteMate make our company more efficient?
+    answer: > 
+     Here’s the big one. WasteMate will help your employees do much more than they were
+     able to do when required to manually configure everything into EnCORE. 
+     They’ll be free to focus on the human elements that make your business personable. In addition, 
+     service order dispatching and routing will improve. Accounts will begin with correct routing 
+     (eliminating new starts at the top of the route) as well as optimize your on-call fleet.
+     <br>
+     Another aspect to consider is that once we’ve worked with you to create route and pricing 
+     polygons, you’ll have a better insight into your own operation than ever before. We’ll 
+     provide you access to the polygons we create/use that will empower your operations staff.
+     <br>
+     WasteMate is striving to be the first software to bring yield management to solid waste hauling. Our application will offer subscribers dynamic pricing to squeeze efficiency out of your fleet. We’ll be targeting the rollout of this feature at discrete segments of your hauling operation starting with on-call services. We’ll offer your customers “airline style” pricing options for different days/sizes of service to ensure your fleet is operating the fewest possible hours to generate the most possible revenue.
+     Perfecting this will take time, but we feel that we’re well equipped to achieve the goal.
+
+  - name: Is the initial setup difficult?
+    answer: > 
+     The process will be simple, straight-forward, and quick. 
+     When your new customer signs up online, their freshly minted 
+     EnCORE account will populate all of the settings that a customer service rep or sales 
+     rep would normally enter into the system manually. When your customer is finished with the 
+     checkout process the pricing, 
+     routing, and container delivery service orders will automatically be prepared.
+     
+  - name: How does it work?
+    answer: > 
+     Not at all! We have tremendous experience with EnCORE and are able to leverage 
+     that experience to know how you’ll expect us to integrate. Our API is able to load 
+     all of your important account settings directly from EnCORE and our GIS team will help 
+     create your route and pricing polygons if you don’t already have them.
+
+  - name: What about routing changes?
+    answer: > 
+     Your operations staff will be in full control of route changes and scheduling 
+     tweaks by simply changing the polygon layout. Changes can be scheduled in advance 
+     making pre-planning of route changes very simple and effective. In a soon to be released 
+     feature (online account management) we’ll notify any customers that will be impacted by route 
+     changes for you. When the changes go live (based on their scheduled effective date), 
+     we’ll instantly start using the new polygons.
+
+  - name: Will it work for on-call / roll-off services?
+    answer: > 
+     Yes. Watch this demo video to see how.
+
+  - name: Is training required to use it?
+    answer: > 
+     No. It’s easy to use for the customer as well as the customer service rep 
+     in your office. WasteMate will effortlessly walk your CSRs through the account 
+     creation and customers 
+     can sign up for services 24/7 without ever having to call or visit your office.
+
+  - name: How does this affect our company’s CSRs?
+    answer: > 
+     The goal of WasteMate is not to replace CSRs and dispatchers, but to make them 
+     more effective, more capable, and better at their jobs. We realize the importance 
+     of having a real live human at your company monitoring customer accounts and bringing 
+     intangible properties to the relationship with subscribers. With WasteMate, they’ll be 
+     able to focus on curating those relationships while the software connects the dots.
+
+  - name: Does WasteMate use algorithms?
+    answer: > 
+     Everything that WasteMate does for you will be driven by algorithms, 
+     which consistently take inputs and give outputs. WasteMate has geographic knowledge 
+     about your service territory, knowledge of your services, and information about your new 
+     customer. That input data is run through an algorithm to pump out consistent account settings, 
+     pricing settings, routing settings, and service order configuration.
+
+  - name: How does its use minimize human error?
+    answer: > 
+     Humans make mistakes. Algorithms don’t. Each and every setting on your customer accounts 
+     that are created by WasteMate will be perfect. Addresses will be validated with USPS. Credit 
+     card information will be validated with your processor. Pricing will be expertly configured. 
+     Start dates and billing cycles will follow your rules. Routing will be ideally set. 
+     WasteMate-generated accounts will be the gold standard in hauling efficiency and
+     profitability.
+
+  - name: What’s the accessibility for our customers?
+    answer: > 
+     We’re pretty sure your office isn’t open 24/7, but WasteMate is. Day or night, 
+     week days or weekends, WasteMate will be ready to accept new business for you. 
+     We run on Microsoft Azure in multiple regions to achieve 99.997% uptime.
+
+  - name: Will we have access to WasteMate’s metrics?
+    answer: > 
+     Yes. WasteMate will provide a timeline of every customer interaction. 
+     You’ll know how long it took them to sign up and how many visitors looked at your services, 
+     but decided not to subscribe. You’ll have new metrics available to refine, 
+     measure, and improve your sales process. It’s a bright future.
+
+  - name: Can we add our company logo and branding to WasteMate?
+    answer: > 
+     Yes. Options will be available for a white-label version of the website and app that allows 
+     you to brand them however you see fit.
+
+  - name: How does WasteMate integrate with our company’s website?
+    answer: > 
+     There are two options. 1) You can link to WasteMate from your current 
+     website. We will provide you with all of the information your webmaster will need. 
+     2) We can build a new website for your company, fully-integrated with WasteMate in 
+     order to provide the most streamlined user experience available. Your customers will never 
+     need to navigate away from your website to sign up for service.
+
+  - name: How much does WasteMate cost?
+    answer: > 
+     PRICING
+
+  - name: When are you planning to launch?
+    answer: > 
+     Our first version, with new residential and on-call ordering only, launched in the summer of 2015.
+     <br>
+     We’re currently working on version 2 and it will include full account management for your 
+     customers. This covers paying their recurring invoices, managing their on-call services, 
+     changing their 
+     recurring service subscription level. This version is due out by June 2016.
+
+  - name: I have more questions. Who can I talk to?
+    answer: > 
+     You can fill out our Contact form and we’ll get back to you within 24 business hours.
+
+
+- name: Technology
+
+- name: Training
+  questions:
+  - name: 
+    answer: > 
+        
+- name: Data
+  questions:
+  - name: 
+    answer: > 
+     
+

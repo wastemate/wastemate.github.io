@@ -11,10 +11,10 @@
 			height: 60px;
 		}
 		.navbar-brand {
-			padding-top: 12px;
+			padding-top: 15px;
 		}
 		.nav li {
-			padding: 5px 0;
+			padding: 7px 0;
 			@media #{$xs} {
 				padding: 10px 30px;
 			}
@@ -340,14 +340,12 @@
 		}
 		p {
 			font-weight: $font-weight-regular;
+			margin-bottom: 10px;
 		}
 		h1 {
 			color: $purple-color;
 			font-weight: $font-weight-light;
 			margin-bottom: 16px;
-			@media #{$xs} {
-				font-size: $font-size-h2;
-			}
 		}
 	}
 	.order-steps{
@@ -367,6 +365,74 @@
 			}
 		}
 
+	}
+
+/*** Integration ***/
+	.encore-options {
+		small {
+			font-size: 13px;
+			text-decoration: underline;
+		}
+		img {
+			margin: 0;
+		}
+		p {
+			margin-bottom: 25px;
+			img {
+				float: left;
+				margin-right: 5px;
+				margin-top: 10px;
+			}
+		}
+		a {
+			color: $dark-blue-color;
+		}
+		.most-popular {
+			position: absolute;
+			left: -50px;
+			top: -10px;
+		}
+	}
+
+/*** FAQ ***/
+	.faq {
+		.header-box {
+			min-height: 80px;
+			margin-top: -50px;
+		}
+		.tab-content{
+			padding: 35px 15px 30px 15px;
+		}
+		br {
+			line-height: 30px;
+		}
+		p {
+			padding-bottom: 10px;
+		}
+		.nav-tabs {
+			border: none;
+			color: $text-color;
+			margin: 0;
+			li {
+				padding: 0;
+				&.active>a, &.active>a:focus, &.active>a:hover {
+					color: $text-color;
+					border: none;
+					background-color: transparent;
+				}
+				a {
+					text-transform: uppercase;
+					padding: 0 5px;
+					color: $text-color;
+					border: none;
+					margin: 0;
+					font-size: $font-size-base;
+					&:hover {
+						background-color: transparent;
+					}
+				}
+			}
+		}
 	}
 
 /*** Site footer ***/

@@ -1,0 +1,46 @@
+---
+layout: default
+title: FAQ's
+---
+
+<div class="territories faq">
+    <img src={{ "/image/faq-background.jpg" | prepend: site.baseurl }}>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">
+                <div class="header-box">
+                    <h1 class="purple">Frequently Asked Questions</h1>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        {% for heading in site.data.faq %}
+                            <li role="presentation" class="{% if forloop.index == 1  %} active {% endif %}">
+                                <a href="#heading-{{ forloop.index }}" aria-controls="heading-{{ forloop.index }}" role="tab" data-toggle="tab">
+                                    <p>{{ heading.name }}</p>
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="tab-content">
+                        {% for heading in site.data.faq %}
+
+                            {% assign hid = forloop.index %}
+
+                            <div role="tabpanel" class="tab-pane {% if forloop.index == 1  %} active {% endif %}" id="heading-{{ forloop.index }}">
+                                {% for question in heading.questions %}
+                                    <div id="h{{ hid }}qa{{ forloop.index }}">
+                                        <h1>{{ question.name }}</h1>
+                                        <div>
+                                            <p>{{ question.answer }}</p>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        {% endfor %}
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
