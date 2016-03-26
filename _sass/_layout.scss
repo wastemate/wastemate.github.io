@@ -236,6 +236,8 @@
 			}
 			img {
 				margin-top: 8px;
+				height: 70px;
+				width: 70px;
 				text-align: center;
 			}
 			hr {
@@ -309,6 +311,10 @@
 				}
 				@media #{$xs} {
 					padding: 10px;
+				}
+				img {
+					height: 70px;
+					width: 70px;
 				}
 				p {
 					height: 57px;
