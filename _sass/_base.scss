@@ -55,6 +55,9 @@
     h4 {
         font-size: $font-size-h4;
     }
+    h5 {
+        font-size: $font-size-h5;
+    }
     p {
         font-size: $font-size-base;
     }
@@ -134,6 +137,9 @@
     }
     .orange {
         color: $orange-color;
+    }
+    .white-background {
+        background-color: $white-color !important;
     }
     .header-box {
         padding: 15px;
