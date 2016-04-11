@@ -12,128 +12,19 @@ layout: default
                     <p>Each of these features help to solve common problems that waste haulers face on a daily basis. They are exclusive to WasteMate and are the building blocks of its unique technology.</p>
                 </div>
 
-                <div class="icon-box clearfix">
-                    <div class="col-sm-2 col-xs-2">
-                        <img src={{ "/image/geospatial_pricing.png" | prepend: site.baseurl }}>
-                    </div>
-                    <div class="col-sm-10 col-xs-10">
-                        <h1>Geospatial Pricing</h1>
-                        <p class="purple">All of your prices are mapped, so all services for every address are matched with an exact dollar amount.</p>
-                        <p>WasteMate is built around the concept of regions. A region can be any size, but at the core they are just a description of a particular area that you service. Once defined geospatially, all of the services you offer to customers in that region are linked and priced. Upcoming price changes can be entered well ahead of time with an effective start date, so there are no late nights spent at the office preparing for an increase.</p>
-                        <p>Every address located in a specific region will have pricing associated with it. Just type in the address to get the price. It’s that easy.</p>
-                    </div>
-                </div>
 
-                <hr>
+                {% for problem in site.problem %}
+                    <div class="icon-box clearfix" id="{{ problem.anchore }}">
+                        <div class="col-sm-2 col-xs-2">
+                            <img src="/image/{{ problem.featuresImage }}" | prepend: site.baseurl>
+                        </div>
+                        <div class="col-sm-10 col-xs-10">
+                            {{ problem.content }}
+                        </div>
+                    </div>
+                    <hr>
+                {% endfor %}
 
-                <div class="icon-box clearfix">
-                    <div class="col-sm-2 col-xs-2">
-                        <img src={{ "/image/route_scheduling.png" | prepend: site.baseurl }}>
-                    </div>
-                    <div class="col-sm-10 col-xs-10">
-                        <h1>Route Schedules</h1>
-                        <p class="purple">WasteMate’s internal logic can tell you which routes cover any address in your service territory.</p>
-                        <p>Users need only to enter an address and they will instantly be presented with detailed information about which day of the week each service can be performed. Once services are chosen, a full schedule is displayed that includes the upcoming days of service.</p>
-                        <p>Customers ordering online have experiences similar to those of your staff. Once their address and order are known by WasteMate, customers will see which days each service is performed and can choose their start date based on the route schedule.</p>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="icon-box clearfix">
-                    <div class="col-sm-2 col-xs-2">
-                        <img src={{ "/image/route_polygons.png" | prepend: site.baseurl }}>
-                    </div>
-                    <div class="col-sm-10 col-xs-10">
-                        <h1>Route Polygons</h1>
-                        <p class="purple">WasteMate’s GIS backend tracks all of your routes as polygons which are then easily viewed and inspected to identify inefficiencies.</p>
-                        <p>By defining the shape of an ideal route, you give WasteMate the intel it needs to fill in the holes with new customers as they sign up, automatically making it more efficient (and profitable!).</p>
-                        <p>We’re also able to display the density of your routes by highlighting the addresses that are serviced, those that don’t have any service, and those that are serviced by another route. This type of visualization makes it very straightforward to identify problem areas and monitor routing changes.</p>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="icon-box clearfix">
-                    <div class="col-sm-2 col-xs-2">
-                        <img src={{ "/image/parcel_polygons.png" | prepend: site.baseurl }}>
-                    </div>
-                    <div class="col-sm-10 col-xs-10">
-                        <h1>Parcel Polygons</h1>
-                        <p class="purple">WasteMate identifies which parcels have service and which ones don’t. The web interface makes it easy to identify the areas with the most potential for profit.</p>
-                        <p>WasteMate’s roots in GIS allow it to map out the density of your routes, neighborhood by neighborhood, to locate the gaps where you’re missing out on potential customers. While this ability boasts many benefits, it is extremely effective at identifying areas for your outside sales team to target.</p>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="icon-box clearfix">
-                    <div class="col-sm-2 col-xs-2">
-                        <img src={{ "/image/ecommerce.png" | prepend: site.baseurl }}>
-                    </div>
-                    <div class="col-sm-10 col-xs-10">
-                        <h1>E-Commerce</h1>
-                        <p class="purple">Track your upcoming orders and measure them against available resources to know how many orders you can fulfill.</p>
-                        <p>The fundamental goal of WasteMate is to provide an e-commerce solution that is built from the ground up. Collecting customer information on a web form is only part of the story, and really, anyone can do that. WasteMate is different because it learns about your hauling operation.</p>
-                        <p>This operational knowledge lets WasteMate schedule work that your fleet can actually accomplish. We provide complete transparency—no smoke and mirrors here—so you can view the same schedule that WasteMate is using. After signing in to your dashboard, you’ll get an instant overview of your upcoming orders.</p>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="icon-box clearfix">
-                    <div class="col-sm-2 col-xs-2">
-                        <img src={{ "/image/supply_demand.png" | prepend: site.baseurl }}>
-                    </div>
-                    <div class="col-sm-10 col-xs-10">
-                        <h1>Supply & Demand</h1>
-                        <p class="purple">Comparing your schedule with your capability makes it easy to adjust pricing and fill the schedule when demand is low.</p>
-                        <p>If you’ve ever ordered airline tickets, you’ve experienced this flexible pricing feature firsthand. WasteMate gives you the tools to ensure that your customers’ demand automatically balances with your operational supply.</p>
-                        <p>Structured like airline ticket pricing, the cost of your services can vary day by day. Enable discounts on the fly to entice customers to book services on the days when you have a small workload. Never worry about unfilled holes in your schedule again.</p>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="icon-box clearfix">
-                    <div class="col-sm-2 col-xs-2">
-                        <img src={{ "/image/info_architecture.png" | prepend: site.baseurl }}>
-                    </div>
-                    <div class="col-sm-10 col-xs-10">
-                        <h1>Database Architecture</h1>
-                        <p class="purple">All information is set using polygons. Everything within a specific region will be consistent.</p>
-                        <p>WasteMate is built on Microsoft SQL Server 2014 and takes advantage of its advanced geospatial dataset features. All of your data is concretely linked to ensure that the application can never omit any required information.</p>
-                        <p>Polygons are backed by services and routes. The services are backed by items and operations. Routes are backed by materials, labor and equipment. It’s a puzzle without any missing pieces.</p>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="icon-box clearfix">
-                    <div class="col-sm-2 col-xs-2">
-                        <img src={{ "/image/information_kiosk.png" | prepend: site.baseurl }}>
-                    </div>
-                    <div class="col-sm-10 col-xs-10">
-                        <h1>Information Kiosk</h1>
-                        <p class="purple">Everything about your company is documented via WasteMate’s “learning” configuration process. No one person is essential to explaining processes or scheduling services.</p>
-                        <p>Your company’s operations have to be taught to WasteMate. Once WasteMate knows all about your regions, services, fleet, labor, and inventory, everyone in your organization is empowered with the same capabilities.</p>
-                        <p>Our clients often learn things about their operation through WasteMate’s setup process. It makes sure you agree with yourself.</p>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="icon-box clearfix">
-                    <div class="col-sm-2 col-xs-2">
-                        <img src={{ "/image/online-ordering.png" | prepend: site.baseurl }}>
-                    </div>
-                    <div class="col-sm-10 col-xs-10">
-                        <h1>Online Ordering</h1>
-                        <p class="purple">Available 24/7 via your website, WasteMate eliminates the need for customers to phone in orders during business hours.</p>
-                        <p>The very nature of WasteMate means you’ll reach a new audience. Its online ordering capabilities allow customers to interact with your services on their schedule. They no longer have to use their lunch breaks to call your office during business hours or put time aside to place an order while their kids are napping.</p>
-                        <p>Your services become easy to understand and available to order whenever it’s most convenient for your customer.</p>
-                    </div>
-                </div>
             
             </div>
         </div>

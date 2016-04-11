@@ -1,3 +1,7 @@
+// Animation //
+window.sr = scrollReveal();
+sr.init();
+	
 var slider = document.querySelector('#slider-input .slider');
 var sliderInput = document.querySelector('#slider-input input');
 var numberBox = document.querySelector('#slider-input .number-box');

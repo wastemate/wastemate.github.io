@@ -165,7 +165,7 @@
         }
     }
     .icon-box {
-        margin: 15px 0;
+        margin: 20px 0;
         & > div {
             padding: 0 7px;
             &:first-child {
@@ -176,6 +176,10 @@
             margin: 0;
             height: 70px;
             width: 70px;
+        }
+        p em {
+            color: $purple-color;
+            font-style: normal;
         }
         h1 {
             font-weight: $font-weight-light;
