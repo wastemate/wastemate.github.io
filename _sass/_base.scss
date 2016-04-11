@@ -196,6 +196,11 @@
             color: $white-color;
             border-top-right-radius: 3px;
             border-top-left-radius: 3px;
+            @media #{$xs} {
+                & > .col-xs-6 {
+                    float: left;
+                }
+            }
             h1 {
                 font-weight: $font-weight-light;
                 display: inline;
@@ -218,6 +223,15 @@
         border-bottom-left-radius: 3px;
         label {
             padding-bottom: 20px;
+            font-weight: $font-weight-regular;
+            cursor: pointer;
+            i {
+                font-weight: $font-weight-light;
+                display: block;
+            }
+        }
+        .label-text {
+
         }
         p.purple {
             margin-bottom: 20px;
@@ -253,6 +267,10 @@
             }
             .additional-brands {
                 border-right: 1px solid #babcbf;
+                @media #{$xs} {
+                    margin-bottom: 15px;
+                    border-right: none;
+                }
             }
         }
         .user-number{
@@ -262,7 +280,7 @@
         .number-box {
             height: 40px;
             width: 40px;
-            padding: 5px;
+            padding: 5px 0;
             color: $white-color;
             background-color: $purple-color;
             text-align: center;
@@ -271,39 +289,83 @@
             h3 {
                 font-weight: $font-weight-light;
             }
+            @media #{$xs} {
+                position: initial;
+                margin-top: 40px;
+                text-align: center;
+                display: inline-block;
+            }
         }
-        .theme-green .back-bar {
-            height: 4px;
-            border:1px solid #e1e1e1;
-            border-radius: 6px;
-            background-color: $grey-color;
+
+        .checkbox {
+            display: none;
+
+            & + span {
+                padding: 0;
+                padding-right: 10px;
+            }
+
+            & + span:before {
+                content: "";
+                display: inline-block;
+                vertical-align: middle;
+                letter-spacing: 10px; 
+                border: 1px solid $border-color;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+            }
+
+            &:checked + span:before {
+                content: "";
+                background-image: url(/image/check.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                padding: 8px;
+            }
         }
-        .theme-green .scale ins {
-            top: 20px;
-            font-size: 14px;
-            font-weight: $font-weight-regular;
+
+        #slider-input {
+            .noUi-pips .noUi-marker:first-child {
+                display: none;
+            }
+            .noUi-horizontal {
+                height: 4px;
+                border: none;
+                border-radius: 6px;
+                background-color: #e1e1e1;
+                box-shadow: none;
+            }
+            .noUi-base {
+                cursor: pointer;
+            }
+            .noUi-handle {
+                background: url(/image/slider.png) center no-repeat;
+                height: 18px;
+                width: 18px;
+                border: none;
+                left: -9px;
+                top: -9px;
+                box-shadow: none;
+                cursor: col-resize;
+
+                &:before, &:after {
+                    display: none;
+                }
+            }
+            .noUi-value-horizontal {
+                font-size: 14px;
+                font-weight: $font-weight-regular;
+            }
+            .noUi-marker-horizontal {
+                background-color: #B2B2B2;
+                border-radius: 3px;
+            }
+            .noUi-pips-horizontal {
+                top: -16px;
+            }
         }
-        .theme-green .back-bar .selected-bar {
-            background-color: transparent;
-            background-image: none;
-        }
-        .theme-green .back-bar .pointer {
-            background-image: url(/image/slider.png);
-            height: 18px;
-            width: 18px;
-            border-color: transparent;
-            top: -8px;
-        }
-        .back-bar {
-            width: 340px;
-            left: -20px;
-        }
-        .slider-container .scale span {
-            border-left: 2px solid #B2B2B2;
-            height: 15px;
-            border-radius: 3px;
-            top: -11px;
-        }
+
         .btn-group {
             background-color: #DCDDDE;
             border-radius: 15px;
